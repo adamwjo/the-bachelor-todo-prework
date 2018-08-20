@@ -13,13 +13,13 @@ end
 
 def get_contestant_name(data, occupation)
   name == nil
-  binding.pry
   data.each do |key, value|
     if data[key][value] == occupation
       name = data[key][value]
     end
   end
   name
+  binding.pry 
 end
 
 def count_contestants_by_hometown(data, hometown)
