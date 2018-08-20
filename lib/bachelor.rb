@@ -15,11 +15,11 @@ def get_contestant_name(data, occupation)
   name == nil
   data.each do |key, value|
     if data[key][value] == occupation
+binding.pry
       name = data[key][value]
     end
   end
   name
-  binding.pry 
 end
 
 def count_contestants_by_hometown(data, hometown)
