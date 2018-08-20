@@ -3,11 +3,8 @@ def get_first_name_of_season_winner(data, season)
   first_name = nil
   data[season].each do |value|
     binding.pry
-    if key == season
-      value.collect do |attribute, data|
         if attribute.has_value?("winner")
           first_name = [attribute]["name"]
-        end
       end
     end
   end
