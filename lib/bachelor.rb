@@ -5,7 +5,6 @@ def get_first_name_of_season_winner(data, season)
     binding.pry
         if attribute.has_value?("winner")
           first_name = [attribute]["name"]
-      end
     end
   end
 end
