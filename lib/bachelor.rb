@@ -2,9 +2,9 @@ require "pry"
 def get_first_name_of_season_winner(data, season)
   first_name = nil
   data.collect do |key, value|
+    binding.pry
     if key == season
       value.collect do |attribute, data|
-        binding.pry
         if attribute.has_value?("winner")
           first_name = [attribute]["name"]
         end
