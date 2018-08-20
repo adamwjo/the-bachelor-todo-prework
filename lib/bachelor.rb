@@ -5,6 +5,7 @@ def get_first_name_of_season_winner(data, season)
     if key == season
       value.collect do |attribute, data|
         puts "#{attribute} #{data}"
+        binding.pry
         end
       end
     end
