@@ -3,10 +3,7 @@ def get_first_name_of_season_winner(data, season)
   first_name = " "
   data.collect do |key, value|
     if key == season
-      value.collect do |key, value|
-        if season[key][value] == "winner"
-          first_name = season[attribute]["name"]
-binding.pry
+      value.collect do |attribute, data|
         end
       end
     end
