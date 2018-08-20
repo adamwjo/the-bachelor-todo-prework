@@ -7,7 +7,7 @@ def get_first_name_of_season_winner(data, season)
     end
   end
   new_name = first_name.split()
-  new_name.unshift
+  new_name.delete(1)
   new_name.join
 end
 
