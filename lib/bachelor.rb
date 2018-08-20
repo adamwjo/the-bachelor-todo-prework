@@ -4,6 +4,7 @@ def get_first_name_of_season_winner(data, season)
   data.collect do |key, value|
     if key == season
       value.collect do |attribute, data|
+        binding.pry
         if attribute.has_value?("winner")
           first_name = [attribute]["name"]
         end
