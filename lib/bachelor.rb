@@ -14,12 +14,12 @@ end
 def get_contestant_name(data, occupation)
   new_name = nil
   data.each do |season, array|
-    array.each do |season_hash|
-      if season_hash.values.include?(occupation)
-        new_name = season_hash["name"]
-      end
+    binding.pry
+    if data[season][array]["occupation"] == occupation
+      new_name = data[season][array]["name"]
     end
   end
+  new_name
 end
 
 def count_contestants_by_hometown(data, hometown)
