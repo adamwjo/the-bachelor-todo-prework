@@ -16,6 +16,7 @@ def get_contestant_name(data, occupation)
   data.each do |key, value|
     if data[key][value] == occupation
       new_name = data[key]["name"]
+      binding.pry
     end
   end
   new_name
