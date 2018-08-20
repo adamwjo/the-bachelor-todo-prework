@@ -1,5 +1,15 @@
 def get_first_name_of_season_winner(data, season)
-  # code here
+  first_name = " "
+  data.collect do |key, value|
+    if key == season
+      value.collect do |key, value|
+        if season[key] == "winner"
+          first_name = season[attribute]["name"]
+        end
+      end
+    end
+  end
+  first_name
 end
 
 def get_contestant_name(data, occupation)
