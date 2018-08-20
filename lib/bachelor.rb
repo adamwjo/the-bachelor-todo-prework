@@ -7,7 +7,7 @@ def get_first_name_of_season_winner(data, season)
     end
   end
   new_name = first_name.split()
-  new_name.delete(1)
+  new_name = new_name.delete(1)
 end
 
 def get_contestant_name(data, occupation)
