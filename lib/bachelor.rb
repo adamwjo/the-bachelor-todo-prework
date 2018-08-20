@@ -41,7 +41,7 @@ def get_occupation(data, hometown)
     array.each do |hash|
       if hash["hometown"] == hometown
         occupation = hash["occupation"]
-        return
+        return occupation
       end
     end
   end
