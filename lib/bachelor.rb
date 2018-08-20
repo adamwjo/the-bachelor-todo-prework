@@ -12,10 +12,10 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  name == nil
+  new_name == nil
   data.each do |key, value|
     if data[key][value] == occupation
-      name = data[key]["name"]
+      new_name = data[key]["name"]
     end
   end
   name
