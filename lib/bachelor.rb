@@ -10,8 +10,9 @@ def get_first_name_of_season_winner(data, season)
   new_name.pop
   new_name.join
 end
-binding.pry 
+
 def get_contestant_name(data, occupation)
+  binding.pry
   name == nil
   data.each do |key, value|
     if data[key][value] == occupation
