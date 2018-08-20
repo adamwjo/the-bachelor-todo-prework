@@ -15,7 +15,7 @@ def get_contestant_name(data, occupation)
   new_name = nil
   data.each do |season, array|
     if data[season][array]["occupation"] == occupation
-      new_name = data[key][value]["name"]
+      new_name = data[season][array]["name"]
     end
   end
   new_name
