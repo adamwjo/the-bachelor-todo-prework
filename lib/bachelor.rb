@@ -14,7 +14,7 @@ end
 def get_contestant_name(data, occupation)
   new_name == nil
   data.each do |key, value|
-    if data[key][value] == occupation
+    if data[key][value]["occupation"] == occupation
       new_name = data[key]["name"]
     end
   end
