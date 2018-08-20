@@ -1,3 +1,4 @@
+require "pry"
 def get_first_name_of_season_winner(data, season)
   first_name = " "
   data.collect do |key, value|
@@ -5,6 +6,7 @@ def get_first_name_of_season_winner(data, season)
       value.collect do |key, value|
         if season[key][value] == "winner"
           first_name = season[attribute]["name"]
+          binding.pry
         end
       end
     end
