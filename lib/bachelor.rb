@@ -4,7 +4,7 @@ def get_first_name_of_season_winner(data, season)
   data[season].each do |value|
     binding.pry
         if value["status"] == "Winner"
-          first_name = [attribute]["name"]
+          first_name = value["name"]
     end
   end
 end
