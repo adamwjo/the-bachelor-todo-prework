@@ -14,7 +14,6 @@ end
 def get_contestant_name(data, occupation)
   new_name = nil
   data.each do |season, array|
-    binding.pry
     array.each do |hash|
       if hash["occupation"] == occupation
         new_name = hash["name"]
